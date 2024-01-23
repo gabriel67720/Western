@@ -5,20 +5,19 @@
 #include "Humain.h"
 #include "Dame.h"
 #include "Cowboy.h"
+#include "Brigand.h"
 
 int main()
 {
 	Cowboy lucky("Lucky Luke");
-	Humain joe("Joe Dalton", "Whisky");
+	Brigand joe("Joe Dalton");
 	Dame jenny("Jenny");
 	
 	
-	
-	lucky.presentation();
-	jenny.presentation();
-	jenny.changeDeRobe("bleue");
-	lucky.boire();
-	jenny.boire();
+	joe.presentation();
+	jenny.seFaitKidnapper();
+	cout << endl;
+	jenny.getEtat();
 
 
 }	

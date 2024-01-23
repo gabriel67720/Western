@@ -32,4 +32,10 @@ void Dame::changeDeRobe(const string nouvellerobe)
 	cout << "(" << nom << ")" << "--" << " Regardez ma nouvelle robe " << couleurRobe << " !" << endl;
 }
 
+void Dame::seFaitKidnapper()
+{
+	cout << " Au secours, je me fais kidnapper ! ";
+	etat = "captive";
+}
+
 

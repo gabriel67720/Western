@@ -18,7 +18,7 @@ public:
 	string getEtat();
 	void presentation();
 	void changeDeRobe( const string nouvellerobe);
-
+	void seFaitKidnapper();
 
 };
 
