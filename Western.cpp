@@ -2,11 +2,47 @@
 //
 
 #include <iostream>
+#include "Humain.h"
+#include "Dame.h"
+#include "Cowboy.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
-}
+	Cowboy lucky("Lucky Luke");
+	Humain joe("Joe Dalton", "Whisky");
+	Dame jenny("Jenny");
+	
+	
+	
+	lucky.presentation();
+	jenny.presentation();
+	jenny.changeDeRobe("bleue");
+	lucky.boire();
+	jenny.boire();
+
+
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
 // Déboguer le programme : F5 ou menu Déboguer > Démarrer le débogage
@@ -18,3 +54,5 @@ int main()
 //   4. Utilisez la fenêtre Liste d'erreurs pour voir les erreurs.
 //   5. Accédez à Projet > Ajouter un nouvel élément pour créer des fichiers de code, ou à Projet > Ajouter un élément existant pour ajouter des fichiers de code existants au projet.
 //   6. Pour rouvrir ce projet plus tard, accédez à Fichier > Ouvrir > Projet et sélectionnez le fichier .sln.
+
+

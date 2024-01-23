@@ -151,7 +151,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Cowboy.cpp" />
+    <ClCompile Include="Dame.cpp" />
+    <ClCompile Include="Humain.cpp" />
     <ClCompile Include="Western.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cowboy.h" />
+    <ClInclude Include="Dame.h" />
+    <ClInclude Include="Humain.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
