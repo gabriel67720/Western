@@ -23,14 +23,14 @@ string Dame::getEtat()
 
 void Dame::presentation()
 {
-	cout << "(" << nom << ")" << "--" << "Bonjour ! Je suis Miss " << nom << " et j'ai une jolie robe " << couleurRobe << "!" << endl;
+	cout << "(" << nom << ")" << " -- " << "Bonjour ! Je suis Miss " << nom << " et j'ai une jolie robe " << couleurRobe << "!" << endl;
 
 }
 
 void Dame::changeDeRobe(const string nouvellerobe)
 {
 	this->couleurRobe = nouvellerobe;
-	cout << "(" << nom << ")" << "--" << " Regardez ma nouvelle robe " << couleurRobe << " !" << endl;
+	cout << "(" << nom << ")" << " -- " << " Regardez ma nouvelle robe " << couleurRobe << " !" << endl;
 }
 
 void Dame::seFaitKidnapper()
@@ -39,9 +39,10 @@ void Dame::seFaitKidnapper()
 	etat = "captive";
 }
 
-void Dame::seFaitliberer(Cowboy &cowboy)
+void Dame::seFaitliberer(Humain &sauveur)
 {
-	cout << "(" << nom << ") -- Merci " << cowboy.getNom() << ", je suis enfin libre !" << endl;
+	cout << "(" << nom << ") -- Merci " << sauveur.getNom() << ", je suis enfin libre !" << endl;
+	etat = "libre ";
 }
 
 

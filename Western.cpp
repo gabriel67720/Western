@@ -6,23 +6,39 @@
 #include "Dame.h"
 #include "Cowboy.h"
 #include "Brigand.h"
+#include "Barman.h"
+#include "Sherif.h"
 
 int main()
 {
 	Cowboy lucky("Lucky Luke");
 	Brigand joe("Joe Dalton");
 	Dame jenny("Jenny");
-	
+	Barman robert("Robert");
+	Sherif clint("Clint");
 	
 	lucky.presentation();
 	jenny.presentation();
 	joe.presentation();
+	clint.presentation();
+	robert.presentation();
+
+
 	joe.kidnappe(jenny);
 	lucky.presentation();
+	robert.sert(lucky);
 	joe.presentation();
+	robert.sert(joe);
+	
 	lucky.tire();
 	joe.seFaitEmprisonner(lucky);
-	lucky.libere(jenny);
+	robert.sert(joe);
+	clint.libere(jenny);
+	robert.sert(jenny);
+	joe.echappePrison();
+	cout << "** OYE OYE Brave gens ! Le brigand Joe est recherche ! Une grosse recompense serait donne a qui le capturera ! " << endl;
+	clint.tire();
+	joe.seFaitEmprisonner(clint);
 	cout << endl;
 	
 

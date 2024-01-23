@@ -21,9 +21,10 @@ public:
 	int getRecompense();
 	void presentation();
 	void kidnappe(Dame& dame);
-	void seFaitEmprisonner(Cowboy &cowboy);
+	void seFaitEmprisonner(Humain &humain);
 	void augmenteRecompense(const int prix = 100);
 	void diminueRecompense(const int prix = 100);
 	bool estEnPrison();
+	void echappePrison(); 
 };
 

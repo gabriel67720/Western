@@ -8,13 +8,13 @@ Cowboy::Cowboy(const string nom, const string boissonFavorite, const string adje
 
 void Cowboy::presentation()
 {
-	cout << "(" << nom << ")" << "--" << "Bonjour ! Je suis le "<< adjectif << nom << " et j'adore le " << boissonFavorite << "!" << endl;
+	cout << "(" << nom << ")" << " -- " << "Bonjour ! Je suis le "<< adjectif << nom << " et j'adore le " << boissonFavorite << "!" << endl;
 
 }
 
 void Cowboy::boire()
 {
-	cout << "(" << nom << ")" << "--" << " Ah! un bon verre de " << boissonFavorite << "! GLOUPS ! " << endl;
+	cout << "(" << nom << ")" << " -- " << " Ah! un bon verre de " << boissonFavorite << "! GLOUPS ! " << endl;
 
 }
 

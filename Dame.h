@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 #include "Cowboy.h"
+#include "Sherif.h"
 
 using namespace std;
 
@@ -21,7 +22,7 @@ public:
 	void presentation();
 	void changeDeRobe( const string nouvellerobe);
 	void seFaitKidnapper();
-	void seFaitliberer(Cowboy &cowboy);
+	void seFaitliberer(Humain &sauveur );
 
 };
 

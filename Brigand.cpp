@@ -41,12 +41,12 @@ void Brigand::kidnappe(Dame& dame)
 	}
 }
 
-void Brigand::seFaitEmprisonner(Cowboy& cowboy)
+void Brigand::seFaitEmprisonner(Humain& humain)
 {
 	if (!estEnPrison())
 	{
 		enPrison = true;
-			cout << "(" << nom << ") -- " << "Damned, je suis fait !" << cowboy.getNom() << " tu m'as eu !" << endl;
+		cout << "(" << nom << ") -- " << "Damned, je suis fait !" << humain.getNom() << " tu m'as eu !" << endl;
 	}
 }
 
@@ -65,4 +65,11 @@ void Brigand::diminueRecompense(const int prix)
 bool Brigand::estEnPrison()
 {
 	return enPrison;
+}
+
+void Brigand::echappePrison()
+{
+	enPrison = false;
+	cout << "(" << nom << ") -- " << "Ah ah ! Je me suis echappe ! A moi la libertee !" << endl;
+	augmenteRecompense();
 }
