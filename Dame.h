@@ -2,9 +2,11 @@
 #include "Humain.h"
 #include <iostream>
 #include <string>
+#include "Cowboy.h"
 
 using namespace std;
 
+class Cowboy;
 class Dame : public Humain
 {
 private : 
@@ -19,6 +21,7 @@ public:
 	void presentation();
 	void changeDeRobe( const string nouvellerobe);
 	void seFaitKidnapper();
+	void seFaitliberer(Cowboy &cowboy);
 
 };
 

@@ -1,4 +1,5 @@
 #include "Dame.h"
+#include "Cowboy.h"
 
 Dame::Dame(const string nom, const string boissonFavorite, const string couleurRobe)
 	: Humain(nom, boissonFavorite),  couleurRobe(couleurRobe), etat("libre")
@@ -34,8 +35,13 @@ void Dame::changeDeRobe(const string nouvellerobe)
 
 void Dame::seFaitKidnapper()
 {
-	cout << " Au secours, je me fais kidnapper ! ";
+	cout << "(" << nom << ")  --  " << " Au secours, je me fais kidnapper ! ";
 	etat = "captive";
+}
+
+void Dame::seFaitliberer(Cowboy &cowboy)
+{
+	cout << "(" << nom << ") -- Merci " << cowboy.getNom() << ", je suis enfin libre !" << endl;
 }
 
 

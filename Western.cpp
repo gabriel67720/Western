@@ -14,10 +14,17 @@ int main()
 	Dame jenny("Jenny");
 	
 	
+	lucky.presentation();
+	jenny.presentation();
 	joe.presentation();
-	jenny.seFaitKidnapper();
+	joe.kidnappe(jenny);
+	lucky.presentation();
+	joe.presentation();
+	lucky.tire();
+	joe.seFaitEmprisonner(lucky);
+	lucky.libere(jenny);
 	cout << endl;
-	jenny.getEtat();
+	
 
 
 }	
