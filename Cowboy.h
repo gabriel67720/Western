@@ -16,6 +16,7 @@ public:
 	void presentation();
 	void boire();
 	void tire();
+	void tire();
 	void libere(Dame& dame);
 	
 };
